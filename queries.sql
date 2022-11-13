@@ -26,7 +26,7 @@
 -- Run GA4 Part 2 Test Query: List the names of the employers in St. Louis City. --
 
 SELECT name FROM employer
-WHERE location = "Missouri";
+WHERE location = "St. Louis City";
 
 
 -- Part 3: Test it with SQL: Write the SQL statement to remove the job table.
