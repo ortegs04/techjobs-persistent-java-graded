@@ -7,11 +7,19 @@
 
 <nav th:replace="fragments :: page-header"></nav>
 
-<div class="job-listing">
-    <p th:text="${'Name: ' + employer.name}"></p>
-    <p th:text="${'Location: ' + employer.location}"></p>
-</div>
+<table class="job-listing">
+    <tr>
+        <th th:text="${'Name: '}"></th>
+        <td th:text="${employer.name}"></td>
+    </tr>
+    <tr>
+        <th th:text="${'Location: '}"></th>
+        <td th:text="${employer.location}"></td>
+    </tr>
+</table>
 
+<hr>
+<a href="#" onclick="history.go(-1)">Go Back</a>
 
 </body>
 </html>
